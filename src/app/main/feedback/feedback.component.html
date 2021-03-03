@@ -1,0 +1,45 @@
+<div class="feedback">
+    <div class="content-wrapper" fxLayout="row wrap" fxLayoutAlign="space-between">
+        <div class="feedback__quote">
+            <h2>Get a Quote</h2>
+            <p>Fill up the form and out Team will het back to you within 24 hours.</p>
+            <div fxLayout="row wrap">
+                <mat-icon svgIcon="phone-call"></mat-icon>
+                <span>
+                    <a href="tel:+44 20 3286 6969">+44 20 3286 696</a>
+                </span>
+            </div>
+            <div fxLayout="row wrap">
+                <mat-icon svgIcon="mail"></mat-icon>
+                <span>
+                    <a href="mailto:cargo@kcharles.co.uk">cargo@kcharles.co.uk</a>
+                </span>
+            </div>
+            <div fxLayout="row wrap">
+                <mat-icon svgIcon="map-pin"></mat-icon>
+                <span>102 Street 214 Don</span>
+            </div>
+        </div>
+        <form class="feedback__form" [formGroup]="feedbackControl" fxLayout="column" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput type="text">
+                <mat-icon matPrefix svgIcon="email"></mat-icon>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Phone</mat-label>
+                <input formControlName="phone" matInput type="text">
+                <mat-icon matPrefix svgIcon="phone"></mat-icon>
+            </mat-form-field>
+            
+            <mat-form-field>
+                <mat-label>Notice</mat-label>
+                <textarea formControlName="notice" matInput type="text" rows="5"></textarea>
+                <mat-icon matPrefix svgIcon="notice"></mat-icon>
+            </mat-form-field>
+
+            <button color="accent" mat-flat-button [disabled]="isValid">Send</button>
+        </form>
+    </div>
+</div>

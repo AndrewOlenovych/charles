@@ -1,0 +1,85 @@
+.advanced-feature {
+    background-image: url('/../assets/backgrounds/advanced-feature.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    padding: 152px 0;
+
+    & h2 {
+        max-width: 362px;
+        line-height: 45px;
+        font-size: 33px;
+    }
+
+    & p {
+        max-width: 550px;
+        line-height: 27px;
+    }
+}
+
+.partner {
+    background-color: var(--background-color);
+    padding: 100px 0;
+
+    & .mat-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.partner__type-content {
+    max-width: 300px;
+}
+
+.partner__info {
+    margin-bottom: 105px;
+}
+
+.partner__type {
+    margin-bottom: 60px;
+    max-width: 60%;
+
+    @media screen and (max-width: 559px) {
+        max-width: initial;
+    }    
+}
+
+.swiper-item {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(360deg, #F9F9F9 0%, rgba(255, 255, 255, 0) 100%); 
+}
+
+.our-team {
+    padding: 104px 0;
+    text-align: center;
+
+    & p {
+        line-height: 27px;
+    }
+
+    & a {
+        color: black;
+    }
+
+    & span {
+        margin-bottom: 5px;
+    }
+
+    & img {
+        margin: 0 auto;
+    }
+
+    & .mat-icon {
+        width: 114px;
+        height: 114px;
+        margin: 0 auto;
+    }
+}
+
+.transport-manager__info {
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+}

@@ -1,0 +1,85 @@
+:host {
+    text-align: center;
+}
+
+.about-us {
+    line-height: 27px;
+    text-align: left;
+    padding: 106px 0px;
+}
+
+.our-service {
+    background-color: var(--background-color);
+    padding: 104px 0px;
+
+    & h2 {
+        margin-bottom: 104px;
+        font-size: 33px;
+        margin-top: 0;
+    }
+    
+    & span {
+        margin-top: 54px;
+    }
+}
+
+.our-service__preview {
+    display: flex;
+    flex-direction: column;
+    max-width: 372px;
+    text-align: left;
+    margin-top: 20px;
+
+    & p {
+        max-width: 302px;
+        line-height: 27px;
+    }
+
+    @media screen and (max-width: 585px) {
+        margin: initial;
+    }
+}
+
+.our-service__preview-more {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 17px;
+    text-align: right;
+    vertical-align: super;
+
+    & span {
+        vertical-align: super;
+        margin-right: 29px;
+    }
+}
+
+.advanced-capabilities {
+    padding: 106px 0;
+    text-align: left;
+}
+
+.advanced-capabilities__info {
+    max-width: 504px;
+}
+
+.advanced-capabilities__main {
+    max-width: 575px;
+}
+
+.advanced-capabilities__item {
+    margin-top: 80px;
+}
+
+.advanced-capabilities__picture {
+    position: relative;
+
+    & img:last-child {
+        position: relative;
+        left: -100px;
+        top: 40px;
+
+        @media screen and (max-width: 585px) {
+            left: 20px;
+            top: -80px;
+        }
+    }
+}

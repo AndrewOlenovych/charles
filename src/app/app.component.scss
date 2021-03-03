@@ -1,0 +1,35 @@
+.header {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 20px;
+}
+
+.footer__reducer {
+    background-color: var(--black-color);
+    padding-bottom: 30px;
+    color: var(--white-color);
+}
+
+.permissions {
+    text-align: center; 
+}
+
+.footer__nav {
+    border-bottom: 1px solid var(--white-color);
+    padding: 22px 0;
+}
+
+.mat-icon {
+    height: 20px;
+    width: 40px;
+}
+
+.main-logo {
+    height: 22px;
+    width: 100px;
+
+    & .mat-icon {
+        height: 20px;
+        width: 40px;
+    }
+}

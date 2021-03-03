@@ -1,0 +1,20 @@
+<div class="latest-loads">
+    <div class="content-wrapper">
+        <p class="latest-loads__name">Find Your Load</p>
+        <div class="autocomplete">
+            <app-autocomplete></app-autocomplete>
+        </div>
+        <div>
+            <p class="latest-loads__list-name">Latest Loads</p>
+            <div class="latest-loads__list">
+                <div class="latest-loads__item" fxLayout fxLayout.xs="column wrap" fxLayoutGap="25px" fxLayoutAlign="space-around" *ngFor="let item of dataLoads">
+                    <span>{{item.origin.city}}</span>
+                    <span>to</span>
+                    <span>{{item.destination.city}}</span>
+                    <span>{{item.vehicle_size.title}}</span>
+                    <span>{{item.distance}} mi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<form class="autocomplete-form">
+    <mat-form-field class="autocomplete-full-width">
+        <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-placeholder class="placeholder">Origin</mat-placeholder>
+        <mat-icon svgIcon="search-icon"></mat-icon>
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+        </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
